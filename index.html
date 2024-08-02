@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- Source Codes By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROLEX Company Registration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://freelogopng.com/images/all_img/1659783540rolex-logo-white.png">
+</head>
+
+<body>
+
+<div class="container">
+<div class="navber">
+<img src="https://freelogopng.com/images/all_img/1659783540rolex-logo-white.png" width="80px">  
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">FAQS</a></li>
+        <li><a href="#">Our Survices</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">terms & Poliy</a></li>
+   
+    </ul>
+    
+</nav>  
+<button>Register</button>
+</div>    
+</div>
+
+
+
+  <div class="login_form">
+    <div class="navber">
+        <div class="logog">
+    <a href=""> <img width="90px" src="https://freelogopng.com/images/all_img/1659783540rolex-logo-white.png" alt="">
+    </div></a> 
+    </div>
+    <!-- Login form container -->
+
+<div class="bgimg">
+
+
+    
+    <form action="#">
+      <h3>Rolex <span>Registration</span> </h3>
+
+      <div class="login_option">
+        <!-- Google button -->
+        <div class="option">
+          <a href="#">
+            <i class="fa-brands fa-google"></i>
+            <span>Google</span>
+          </a>
+        </div>
+
+        <!-- Apple button -->
+        <div class="option">
+          <a href="#">
+            <i class="fa-brands fa-apple"></i>
+                       <span>Apple</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Login option separator -->
+      <p class="separator">
+        <span>or</span>
+      </p>
+
+      <!-- Email input box -->
+      <div class="input_box">
+      
+        <label for="email">Usernmae</label>
+        <input type="email" id="email" placeholder="Enter Username" required  />
+      </div>
+
+
+
+      
+      <div class="input_box">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email address" required />
+      </div>
+
+      <!-- Paswwrod input box -->
+      <div class="input_box">
+        <div class="password_title">
+          <label for="password">Password</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <input type="password" id="password"  class="pass-key" placeholder="Enter your password" required />
+        <span class="show">SHOW</span>
+      </div>
+      <div class="checkbox">
+          <input type="checkbox">
+          <span> accept the </span><a href="#">Rolex Company Privacy,Services, Agreement</a><br> and <a href="">Acceptable Use Policy.</a></s>
+      </div>
+
+
+
+      
+       <!-- Login button -->
+      <button type="submit">Log In</button>
+
+      <p class="sign_up">Don't have an account? <a href="#">Sign up</a></p>
+      
+    </form>
+    
+    
+  </div>
+
+
+
+
+
+  <script>
+    const pass_field = document.querySelector('.pass-key');
+    const showBtn = document.querySelector('.show');
+    showBtn.addEventListener('click', function(){
+     if(pass_field.type === "password"){
+       pass_field.type = "text";
+       showBtn.textContent = "HIDE";
+       showBtn.style.color = "#3498db";
+     }else{
+       pass_field.type = "password";
+       showBtn.textContent = "SHOW";
+       showBtn.style.color = "white";
+     }
+    });
+ </script>
+</body>
+</html>

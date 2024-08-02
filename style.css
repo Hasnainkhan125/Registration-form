@@ -1,0 +1,270 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetting default styling and setting font-family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 110vh;
+    padding: 0 10px;
+    display: flex;
+    background-image: url('back2.jpg');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login form styling */
+.login_form {
+    width: 100%;
+    max-width: 60rem;
+    height: 62rem;
+    background: #000000a8;
+    border-radius: 6px;
+    color: white;
+    padding: 41px 30px;
+    margin-top: 120px;
+    box-shadow: 0 10px 20px rgba(230, 0, 0, 0.15);
+}
+
+.login_form h3 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.login_form h3 span{
+    font-size: 45px;
+    color: #6da7ff;
+}
+
+/* Google & Apple button styling */
+
+.login_form .login_option {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_form .login_option .option {
+    width: calc(100% / 2 - 12px);
+}
+
+.login_form .login_option .option a {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #F8F8FB;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    margin: 34px 0 24px 0;
+    text-decoration: none;
+    color: #171645;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.login_form .login_option .option a:hover {
+    background: #d4d4da;
+    transition: .4s;
+    border-color: #0012de;
+}
+
+.login_form .login_option .option a i {
+    font-size: 30px;
+}
+
+.login_form p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.login_form .separator {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+/* Login option separator styling */
+.login_form .separator span {
+    background: #fff;
+    color: black;
+    z-index: 1;
+    padding: 0 30px;
+    position: relative;
+}
+
+.login_form .separator::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background: #C2C2C2;
+    display: block;
+}
+
+form .input_box label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+/* Input field styling */
+form .input_box input {
+    width: 100%;
+    height: 65px;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background: rgb(0, 0, 0);
+    border-bottom: px solid white;
+    font-size: 19px;
+    padding: 0px 20px;
+    margin-bottom: 35px;
+    transition: 0.2s ease;
+}
+
+form .input_box input:focus {
+    border-color: #626cd6;
+}
+
+form .input_box .password_title {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+form .input_box {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #626cd6;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Login button styling */
+form button {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #626CD6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 35px;
+    margin-top: 5rem;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #4954d0;
+}
+
+
+
+
+.show{
+    position: absolute;
+    right: 13px;
+    top: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    display: none;
+    cursor: pointer;
+    font-family: 'Montserrat',sans-serif;
+  }
+
+  .checkbox a{
+    text-decoration: underline;
+padding: 5px;
+font-size: 14px;
+}
+.checkbox{
+    margin-top: 40px;
+}
+
+ body:after{
+    position: absolute;
+    content: '';
+    top: 35px;
+    left: 0;
+    height: 110%;
+    background-color: rgba(30, 0, 255, 0.25);
+    width: 100%;
+    z-index: -1000;
+  }
+
+
+.container{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    background: rgba(30, 0, 255, 0.615);
+    padding: 0px 80px;
+}
+  
+
+.container .navber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.container .navber nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 30px;
+}
+.container .navber ul li{
+    list-style: none;
+}
+.container .navber ul li a{
+    color: white;
+    font-family: sans-serif;
+}
+.container .navber button{
+    margin-top: 15px;
+    padding: 15px 60px;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 25px;
+    border: none;
+    background: transparent;
+border: 1px solid white;
+
+}
+.container .navber button:hover{
+    background: #ffffff;
+transition: .2s;
+color: rgb(7, 4, 4);
+border: 1px solid rgb(0, 0, 0);
+}
